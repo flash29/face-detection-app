@@ -10,7 +10,7 @@ import './App.css';
 import 'tachyons';
 import Particles from 'react-particles-js';
 //import Clarifai from 'clarifai';
-//"start": "react-scripts start", removed from package 
+//"start": "react-scripts start", removed from package
 
 
 const particlesOptions={
@@ -138,9 +138,9 @@ class App extends Component {
                   <FaceRecognition box={box} imageUrl={imageUrl}/>
               </div>
              : (
-                 this.state.route==='register'
-                 ? <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-                 : <SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+                 this.state.route==='signin'
+                 ? <SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+                 : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
 
              )
 
